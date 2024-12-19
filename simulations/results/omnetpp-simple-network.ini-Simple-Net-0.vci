@@ -1,0 +1,710 @@
+file 17317805 1734491949                                        
+version 3
+run Simple-Net-0-20241218-09:17:59-23096
+attr configname Simple-Net
+attr datetime 20241218-09:17:59
+attr datetimef 20241218-091759
+attr experiment Simple-Net
+attr inifile omnetpp-simple-network.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network SimpleNetwork
+attr processid 23096
+attr repetition 0
+attr replication #0
+attr resultdir results/
+attr runnumber 0
+attr seedset 0
+config image-path ../../inet4.5/images
+config sim-time-limit 48h
+config repeat 1
+config num-rngs 8
+config seed-0-mt 1000
+config seed-1-mt 2000
+config seed-2-mt 3000
+config seed-3-mt 4000
+config seed-4-mt 5000
+config seed-5-mt 6000
+config seed-6-mt 7000
+config seed-7-mt 8000
+config **.deus.rng-0 1
+config **.module-eventlog-recording false
+config **.numen.rng-0 2
+config **.app[*].rng-0 3
+config **.fwd.rng-0 4
+config **.wired[*].rng-0 5
+config **.wireless[*].rng-0 6
+config **.mobility.rng-0 7
+config result-dir results/
+config output-vector-file results//omnetpp-simple-network.ini-Simple-Net-0.vec
+config output-scalar-file results//omnetpp-simple-network.ini-Simple-Net-0.sca
+config **.vector-recording true
+config **.scalar-recording true
+config **.statistic-recording true
+config record-eventlog false
+config eventlog-file results//omnetpp-simple-network.ini-Simple-Net-0.elog
+config **.contentServer1.numApps 1
+config **.contentServer1.app[0].typename ContentHostApp
+config **.contentServer1.app[0].hostedPrefixNames "\"ccnx://spacetime.com/\""
+config **.contentServer1.app[0].dataNamePrefix "\"sptm\""
+config **.contentServer1.app[0].segmentSize 1000byte
+config **.contentServer1.app[0].numSegmentsPerFile "intuniform(5, 20)"
+config **.contentServer1.app[0].cacheTime 2h
+config **.contentServer2.numApps 1
+config **.contentServer2.app[0].typename ContentHostApp
+config **.contentServer2.app[0].hostedPrefixNames "\"ccnx://relativity.com/\""
+config **.contentServer2.app[0].dataNamePrefix "\"rltv\""
+config **.contentServer2.app[0].segmentSize 1000byte
+config **.contentServer2.app[0].numSegmentsPerFile "intuniform(5, 20)"
+config **.contentServer2.app[0].cacheTime 2h
+config **.wirelessNode[*].numApps 1
+config **.wirelessNode[*].app[0].typename ContentDownloadApp
+config **.wirelessNode[*].app[0].interContentDownloadInterval "uniform(100.0s, 150.0s)"
+config **.wirelessNode[*].app[0].requestedPrefixNames "\"ccnx://spacetime.com/\""
+config **.wirelessNode[*].app[0].dataNamePrefix "\"sptm\""
+config **.wirelessNode[*].app[0].interestRetransmitTimeout 120s
+config **.wirelessNode[*].app[0].nextFileSuffix "intuniform(0, 99)"
+config **.wirelessNode[*].btWirelessRange 60m
+config **.wirelessNode[*].wlanWirelessRange 80m
+config **.wirelessNode[*].**.constraintAreaMinX 0m
+config **.wirelessNode[*].**.constraintAreaMinY 0m
+config **.wirelessNode[*].**.constraintAreaMinZ 0m
+config **.wirelessNode[*].**.constraintAreaMaxX 80m
+config **.wirelessNode[*].**.constraintAreaMaxY 80m
+config **.wirelessNode[*].**.constraintAreaMaxZ 0m
+config **.wirelessNode[*].mobility "\"RandomWaypointMobility\""
+config **.wirelessNode[*].**.speed "uniform(1mps, 2mps)"
+config **.wirelessNode[*].**.waitTime "uniform(1200s, 1800s)"
+config **.wirelessNode[*].**.initFromDisplayString false
+config **.wirelessAccessRouter.**.constraintAreaMinX 0m
+config **.wirelessAccessRouter.**.constraintAreaMinY 0m
+config **.wirelessAccessRouter.**.constraintAreaMinZ 0m
+config **.wirelessAccessRouter.**.constraintAreaMaxX 80m
+config **.wirelessAccessRouter.**.constraintAreaMaxY 80m
+config **.wirelessAccessRouter.**.constraintAreaMaxZ 0m
+config **.wirelessAccessRouter.wlanWirelessRange 80m
+config **.wirelessAccessRouter.**.initFromDisplayString false
+config **.accessRouter.accessRouterNumWiredTransports 3
+config **.wiredNode*.numApps 1
+config **.wiredNode*.app[0].typename ContentDownloadApp
+config **.wiredNode*.app[0].interContentDownloadInterval "uniform(100.0s, 150.0s)"
+config **.wiredNode*.app[0].requestedPrefixNames "\"ccnx://relativity.com/\""
+config **.wiredNode*.app[0].dataNamePrefix "\"rltv\""
+config **.wiredNode*.app[0].interestRetransmitTimeout 120s
+config **.wiredNode*.app[0].nextFileSuffix "intuniform(0, 99)"
+config **.coreRouter1.coreRouterNumWiredTransports 4
+config **.coreRouter2.coreRouterNumWiredTransports 2
+config **.constraintAreaMinX 0m
+config **.constraintAreaMinY 0m
+config **.constraintAreaMinZ 0m
+config **.constraintAreaMaxX 400m
+config **.constraintAreaMaxY 400m
+config **.constraintAreaMaxZ 0m
+config **.updateInterval 1s
+config **.initFromDisplayString true
+config network SimpleNetwork
+config sim-time-limit 48h
+config repeat 1
+config num-rngs 8
+config seed-0-mt 1000
+config seed-1-mt 2000
+config seed-2-mt 3000
+config seed-3-mt 4000
+config seed-4-mt 5000
+config seed-5-mt 6000
+config seed-6-mt 7000
+config seed-7-mt 8000
+config **.deus.rng-0 1
+config **.module-eventlog-recording false
+config **.numen.rng-0 2
+config **.app[*].rng-0 3
+config **.fwd.rng-0 4
+config **.wired[*].rng-0 5
+config **.wireless[*].rng-0 6
+config **.mobility.rng-0 7
+config result-dir results/
+config output-vector-file results//omnetpp-simple-network.ini-Simple-Net-0.vec
+config output-scalar-file results//omnetpp-simple-network.ini-Simple-Net-0.sca
+config **.vector-recording true
+config **.scalar-recording true
+config **.statistic-recording true
+config record-eventlog false
+config eventlog-file results//omnetpp-simple-network.ini-Simple-Net-0.elog
+
+vector 0 SimpleNetwork.accessRouter fwdFIBEntryCount:vector ETV
+attr recordingmode vector
+attr source fwdFIBEntryCount
+vector 1 SimpleNetwork.wirelessAccessRouter fwdFIBEntryCount:vector ETV
+attr recordingmode vector
+attr source fwdFIBEntryCount
+vector 2 SimpleNetwork.wiredNode1 fwdFIBEntryCount:vector ETV
+attr recordingmode vector
+attr source fwdFIBEntryCount
+vector 3 SimpleNetwork.wiredNode2 fwdFIBEntryCount:vector ETV
+attr recordingmode vector
+attr source fwdFIBEntryCount
+vector 4 SimpleNetwork.wirelessNode[0] fwdFIBEntryCount:vector ETV
+attr recordingmode vector
+attr source fwdFIBEntryCount
+vector 5 SimpleNetwork.wirelessNode[1] fwdFIBEntryCount:vector ETV
+attr recordingmode vector
+attr source fwdFIBEntryCount
+vector 6 SimpleNetwork.coreRouter1 fwdFIBEntryCount:vector ETV
+attr recordingmode vector
+attr source fwdFIBEntryCount
+vector 7 SimpleNetwork.coreRouter2 fwdFIBEntryCount:vector ETV
+attr recordingmode vector
+attr source fwdFIBEntryCount
+vector 8 SimpleNetwork.contentServer1 fwdFIBEntryCount:vector ETV
+attr recordingmode vector
+attr source fwdFIBEntryCount
+vector 9 SimpleNetwork.contentServer2 fwdFIBEntryCount:vector ETV
+attr recordingmode vector
+attr source fwdFIBEntryCount
+vector 10 SimpleNetwork.wiredNode2 appTotalInterestsBytesSent:vector ETV
+attr recordingmode vector
+attr source appTotalInterestsBytesSent
+vector 11 SimpleNetwork.wiredNode2 fwdCacheHitRatio:vector ETV
+attr recordingmode vector
+attr source fwdCacheHitRatio
+vector 12 SimpleNetwork.wiredNode2 fwdCacheMissRatio:vector ETV
+attr recordingmode vector
+attr source fwdCacheMissRatio
+vector 13 SimpleNetwork fwdNetworkCacheHitRatio:vector ETV
+attr recordingmode vector
+attr source fwdNetworkCacheHitRatio
+vector 14 SimpleNetwork fwdNetworkCacheMissRatio:vector ETV
+attr recordingmode vector
+attr source fwdNetworkCacheMissRatio
+vector 15 SimpleNetwork.wiredNode2 fwdPITEntryCount:vector ETV
+attr recordingmode vector
+attr source fwdPITEntryCount
+vector 16 SimpleNetwork.wiredNode2 fwdTotalInterestsBytesSent:vector ETV
+attr recordingmode vector
+attr source fwdTotalInterestsBytesSent
+vector 17 SimpleNetwork.wiredNode2 transportTotalWiredBytesSent:vector ETV
+attr recordingmode vector
+attr source transportTotalWiredBytesSent
+vector 18 SimpleNetwork.accessRouter transportTotalWiredBytesReceived:vector ETV
+attr recordingmode vector
+attr source transportTotalWiredBytesReceived
+vector 19 SimpleNetwork.accessRouter fwdTotalInterestsBytesReceived:vector ETV
+attr recordingmode vector
+attr source fwdTotalInterestsBytesReceived
+vector 20 SimpleNetwork.accessRouter fwdCacheHitRatio:vector ETV
+attr recordingmode vector
+attr source fwdCacheHitRatio
+vector 21 SimpleNetwork.accessRouter fwdCacheMissRatio:vector ETV
+attr recordingmode vector
+attr source fwdCacheMissRatio
+vector 22 SimpleNetwork.accessRouter fwdPITEntryCount:vector ETV
+attr recordingmode vector
+attr source fwdPITEntryCount
+vector 23 SimpleNetwork.accessRouter fwdTotalInterestsBytesSent:vector ETV
+attr recordingmode vector
+attr source fwdTotalInterestsBytesSent
+vector 24 SimpleNetwork.accessRouter transportTotalWiredBytesSent:vector ETV
+attr recordingmode vector
+attr source transportTotalWiredBytesSent
+vector 25 SimpleNetwork.wiredNode1 transportTotalWiredBytesReceived:vector ETV
+attr recordingmode vector
+attr source transportTotalWiredBytesReceived
+vector 26 SimpleNetwork.coreRouter1 transportTotalWiredBytesReceived:vector ETV
+attr recordingmode vector
+attr source transportTotalWiredBytesReceived
+vector 27 SimpleNetwork.wiredNode1 fwdTotalInterestsBytesReceived:vector ETV
+attr recordingmode vector
+attr source fwdTotalInterestsBytesReceived
+vector 28 SimpleNetwork.wiredNode1 fwdCacheHitRatio:vector ETV
+attr recordingmode vector
+attr source fwdCacheHitRatio
+vector 29 SimpleNetwork.wiredNode1 fwdCacheMissRatio:vector ETV
+attr recordingmode vector
+attr source fwdCacheMissRatio
+vector 30 SimpleNetwork.wiredNode1 fwdPITEntryCount:vector ETV
+attr recordingmode vector
+attr source fwdPITEntryCount
+vector 31 SimpleNetwork.coreRouter1 fwdTotalInterestsBytesReceived:vector ETV
+attr recordingmode vector
+attr source fwdTotalInterestsBytesReceived
+vector 32 SimpleNetwork.coreRouter1 fwdCacheHitRatio:vector ETV
+attr recordingmode vector
+attr source fwdCacheHitRatio
+vector 33 SimpleNetwork.coreRouter1 fwdCacheMissRatio:vector ETV
+attr recordingmode vector
+attr source fwdCacheMissRatio
+vector 34 SimpleNetwork.coreRouter1 fwdPITEntryCount:vector ETV
+attr recordingmode vector
+attr source fwdPITEntryCount
+vector 35 SimpleNetwork.coreRouter1 fwdTotalInterestsBytesSent:vector ETV
+attr recordingmode vector
+attr source fwdTotalInterestsBytesSent
+vector 36 SimpleNetwork.coreRouter1 transportTotalWiredBytesSent:vector ETV
+attr recordingmode vector
+attr source transportTotalWiredBytesSent
+vector 37 SimpleNetwork.wirelessAccessRouter transportTotalWiredBytesReceived:vector ETV
+attr recordingmode vector
+attr source transportTotalWiredBytesReceived
+vector 38 SimpleNetwork.contentServer1 transportTotalWiredBytesReceived:vector ETV
+attr recordingmode vector
+attr source transportTotalWiredBytesReceived
+vector 39 SimpleNetwork.coreRouter2 transportTotalWiredBytesReceived:vector ETV
+attr recordingmode vector
+attr source transportTotalWiredBytesReceived
+vector 40 SimpleNetwork.wirelessAccessRouter fwdTotalInterestsBytesReceived:vector ETV
+attr recordingmode vector
+attr source fwdTotalInterestsBytesReceived
+vector 41 SimpleNetwork.wirelessAccessRouter fwdCacheHitRatio:vector ETV
+attr recordingmode vector
+attr source fwdCacheHitRatio
+vector 42 SimpleNetwork.wirelessAccessRouter fwdCacheMissRatio:vector ETV
+attr recordingmode vector
+attr source fwdCacheMissRatio
+vector 43 SimpleNetwork.wirelessAccessRouter fwdPITEntryCount:vector ETV
+attr recordingmode vector
+attr source fwdPITEntryCount
+vector 44 SimpleNetwork.wirelessAccessRouter fwdTotalInterestsBytesSent:vector ETV
+attr recordingmode vector
+attr source fwdTotalInterestsBytesSent
+vector 45 SimpleNetwork.contentServer1 fwdTotalInterestsBytesReceived:vector ETV
+attr recordingmode vector
+attr source fwdTotalInterestsBytesReceived
+vector 46 SimpleNetwork.contentServer1 fwdCacheHitRatio:vector ETV
+attr recordingmode vector
+attr source fwdCacheHitRatio
+vector 47 SimpleNetwork.contentServer1 fwdCacheMissRatio:vector ETV
+attr recordingmode vector
+attr source fwdCacheMissRatio
+vector 48 SimpleNetwork.contentServer1 fwdPITEntryCount:vector ETV
+attr recordingmode vector
+attr source fwdPITEntryCount
+vector 49 SimpleNetwork.coreRouter2 fwdTotalInterestsBytesReceived:vector ETV
+attr recordingmode vector
+attr source fwdTotalInterestsBytesReceived
+vector 50 SimpleNetwork.coreRouter2 fwdCacheHitRatio:vector ETV
+attr recordingmode vector
+attr source fwdCacheHitRatio
+vector 51 SimpleNetwork.coreRouter2 fwdCacheMissRatio:vector ETV
+attr recordingmode vector
+attr source fwdCacheMissRatio
+vector 52 SimpleNetwork.coreRouter2 fwdPITEntryCount:vector ETV
+attr recordingmode vector
+attr source fwdPITEntryCount
+vector 53 SimpleNetwork.coreRouter2 fwdTotalInterestsBytesSent:vector ETV
+attr recordingmode vector
+attr source fwdTotalInterestsBytesSent
+vector 54 SimpleNetwork.wirelessAccessRouter transportTotalWirelessBytesSent:vector ETV
+attr recordingmode vector
+attr source transportTotalWirelessBytesSent
+vector 55 SimpleNetwork.coreRouter2 transportTotalWiredBytesSent:vector ETV
+attr recordingmode vector
+attr source transportTotalWiredBytesSent
+vector 56 SimpleNetwork.contentServer2 transportTotalWiredBytesReceived:vector ETV
+attr recordingmode vector
+attr source transportTotalWiredBytesReceived
+vector 57 SimpleNetwork.wirelessNode[0] fwdTotalInterestsBytesReceived:vector ETV
+attr recordingmode vector
+attr source fwdTotalInterestsBytesReceived
+vector 58 SimpleNetwork.wirelessNode[0] fwdCacheHitRatio:vector ETV
+attr recordingmode vector
+attr source fwdCacheHitRatio
+vector 59 SimpleNetwork.wirelessNode[0] fwdCacheMissRatio:vector ETV
+attr recordingmode vector
+attr source fwdCacheMissRatio
+vector 60 SimpleNetwork.wirelessNode[0] fwdPITEntryCount:vector ETV
+attr recordingmode vector
+attr source fwdPITEntryCount
+vector 61 SimpleNetwork.wirelessNode[1] fwdTotalInterestsBytesReceived:vector ETV
+attr recordingmode vector
+attr source fwdTotalInterestsBytesReceived
+vector 62 SimpleNetwork.wirelessNode[1] fwdCacheHitRatio:vector ETV
+attr recordingmode vector
+attr source fwdCacheHitRatio
+vector 63 SimpleNetwork.wirelessNode[1] fwdCacheMissRatio:vector ETV
+attr recordingmode vector
+attr source fwdCacheMissRatio
+vector 64 SimpleNetwork.wirelessNode[1] fwdPITEntryCount:vector ETV
+attr recordingmode vector
+attr source fwdPITEntryCount
+vector 65 SimpleNetwork.contentServer2 fwdTotalInterestsBytesReceived:vector ETV
+attr recordingmode vector
+attr source fwdTotalInterestsBytesReceived
+vector 66 SimpleNetwork.contentServer2 fwdCacheHitRatio:vector ETV
+attr recordingmode vector
+attr source fwdCacheHitRatio
+vector 67 SimpleNetwork.contentServer2 fwdCacheMissRatio:vector ETV
+attr recordingmode vector
+attr source fwdCacheMissRatio
+vector 68 SimpleNetwork.contentServer2 fwdPITEntryCount:vector ETV
+attr recordingmode vector
+attr source fwdPITEntryCount
+vector 69 SimpleNetwork.contentServer2 appTotalInterestsBytesReceived:vector ETV
+attr recordingmode vector
+attr source appTotalInterestsBytesReceived
+vector 70 SimpleNetwork.contentServer2 appTotalContentObjsBytesSent:vector ETV
+attr recordingmode vector
+attr source appTotalContentObjsBytesSent
+vector 71 SimpleNetwork.contentServer2 appTotalDataBytesSent:vector ETV
+attr recordingmode vector
+attr source appTotalDataBytesSent
+vector 72 SimpleNetwork.contentServer2 fwdCacheAdditionsBytes:vector ETV
+attr recordingmode vector
+attr source fwdCacheAdditionsBytes
+vector 73 SimpleNetwork.contentServer2 fwdCacheSizeBytes:vector ETV
+attr recordingmode vector
+attr source fwdCacheSizeBytes
+vector 74 SimpleNetwork.contentServer2 fwdTotalContentObjsBytesSent:vector ETV
+attr recordingmode vector
+attr source fwdTotalContentObjsBytesSent
+vector 75 SimpleNetwork.contentServer2 transportTotalWiredBytesSent:vector ETV
+attr recordingmode vector
+attr source transportTotalWiredBytesSent
+vector 76 SimpleNetwork.coreRouter2 fwdTotalContentObjsBytesReceived:vector ETV
+attr recordingmode vector
+attr source fwdTotalContentObjsBytesReceived
+vector 77 SimpleNetwork.coreRouter2 fwdCacheAdditionsBytes:vector ETV
+attr recordingmode vector
+attr source fwdCacheAdditionsBytes
+vector 78 SimpleNetwork.coreRouter2 fwdCacheSizeBytes:vector ETV
+attr recordingmode vector
+attr source fwdCacheSizeBytes
+vector 79 SimpleNetwork.coreRouter2 fwdTotalContentObjsBytesSent:vector ETV
+attr recordingmode vector
+attr source fwdTotalContentObjsBytesSent
+vector 80 SimpleNetwork.coreRouter1 fwdTotalContentObjsBytesReceived:vector ETV
+attr recordingmode vector
+attr source fwdTotalContentObjsBytesReceived
+vector 81 SimpleNetwork.coreRouter1 fwdCacheAdditionsBytes:vector ETV
+attr recordingmode vector
+attr source fwdCacheAdditionsBytes
+vector 82 SimpleNetwork.coreRouter1 fwdCacheSizeBytes:vector ETV
+attr recordingmode vector
+attr source fwdCacheSizeBytes
+vector 83 SimpleNetwork.coreRouter1 fwdTotalContentObjsBytesSent:vector ETV
+attr recordingmode vector
+attr source fwdTotalContentObjsBytesSent
+vector 84 SimpleNetwork.accessRouter fwdTotalContentObjsBytesReceived:vector ETV
+attr recordingmode vector
+attr source fwdTotalContentObjsBytesReceived
+vector 85 SimpleNetwork.accessRouter fwdCacheAdditionsBytes:vector ETV
+attr recordingmode vector
+attr source fwdCacheAdditionsBytes
+vector 86 SimpleNetwork.accessRouter fwdCacheSizeBytes:vector ETV
+attr recordingmode vector
+attr source fwdCacheSizeBytes
+vector 87 SimpleNetwork.accessRouter fwdTotalContentObjsBytesSent:vector ETV
+attr recordingmode vector
+attr source fwdTotalContentObjsBytesSent
+vector 88 SimpleNetwork.wiredNode2 transportTotalWiredBytesReceived:vector ETV
+attr recordingmode vector
+attr source transportTotalWiredBytesReceived
+vector 89 SimpleNetwork.wiredNode2 fwdTotalContentObjsBytesReceived:vector ETV
+attr recordingmode vector
+attr source fwdTotalContentObjsBytesReceived
+vector 90 SimpleNetwork.wiredNode2 fwdCacheAdditionsBytes:vector ETV
+attr recordingmode vector
+attr source fwdCacheAdditionsBytes
+vector 91 SimpleNetwork.wiredNode2 fwdCacheSizeBytes:vector ETV
+attr recordingmode vector
+attr source fwdCacheSizeBytes
+vector 92 SimpleNetwork.wiredNode2 appSegmentDownloadDuration:vector ETV
+attr recordingmode vector
+attr source appSegmentDownloadDuration
+vector 93 SimpleNetwork.wiredNode2 appTotalContentObjsBytesReceived:vector ETV
+attr recordingmode vector
+attr source appTotalContentObjsBytesReceived
+vector 94 SimpleNetwork.wiredNode2 appTotalDataBytesReceived:vector ETV
+attr recordingmode vector
+attr source appTotalDataBytesReceived
+vector 95 SimpleNetwork.wiredNode2 appContentDownloadDuration:vector ETV
+attr recordingmode vector
+attr source appContentDownloadDuration
+vector 96 SimpleNetwork.wiredNode1 appTotalInterestsBytesSent:vector ETV
+attr recordingmode vector
+attr source appTotalInterestsBytesSent
+vector 97 SimpleNetwork.wiredNode1 fwdTotalInterestsBytesSent:vector ETV
+attr recordingmode vector
+attr source fwdTotalInterestsBytesSent
+vector 98 SimpleNetwork.wiredNode1 transportTotalWiredBytesSent:vector ETV
+attr recordingmode vector
+attr source transportTotalWiredBytesSent
+vector 99 SimpleNetwork.wiredNode2 fwdTotalInterestsBytesReceived:vector ETV
+attr recordingmode vector
+attr source fwdTotalInterestsBytesReceived
+vector 100 SimpleNetwork.wiredNode1 fwdTotalContentObjsBytesReceived:vector ETV
+attr recordingmode vector
+attr source fwdTotalContentObjsBytesReceived
+vector 101 SimpleNetwork.wiredNode1 fwdCacheAdditionsBytes:vector ETV
+attr recordingmode vector
+attr source fwdCacheAdditionsBytes
+vector 102 SimpleNetwork.wiredNode1 fwdCacheSizeBytes:vector ETV
+attr recordingmode vector
+attr source fwdCacheSizeBytes
+vector 103 SimpleNetwork.wiredNode1 appSegmentDownloadDuration:vector ETV
+attr recordingmode vector
+attr source appSegmentDownloadDuration
+vector 104 SimpleNetwork.wiredNode1 appTotalContentObjsBytesReceived:vector ETV
+attr recordingmode vector
+attr source appTotalContentObjsBytesReceived
+vector 105 SimpleNetwork.wiredNode1 appTotalDataBytesReceived:vector ETV
+attr recordingmode vector
+attr source appTotalDataBytesReceived
+vector 106 SimpleNetwork.wiredNode1 appContentDownloadDuration:vector ETV
+attr recordingmode vector
+attr source appContentDownloadDuration
+vector 107 SimpleNetwork.wirelessNode[1] appTotalInterestsBytesSent:vector ETV
+attr recordingmode vector
+attr source appTotalInterestsBytesSent
+vector 108 SimpleNetwork.wirelessNode[1] fwdTotalInterestsBytesSent:vector ETV
+attr recordingmode vector
+attr source fwdTotalInterestsBytesSent
+vector 109 SimpleNetwork.wirelessNode[1] transportTotalWirelessBytesSent:vector ETV
+attr recordingmode vector
+attr source transportTotalWirelessBytesSent
+vector 110 SimpleNetwork.wirelessAccessRouter transportTotalWiredBytesSent:vector ETV
+attr recordingmode vector
+attr source transportTotalWiredBytesSent
+vector 111 SimpleNetwork.contentServer1 appTotalInterestsBytesReceived:vector ETV
+attr recordingmode vector
+attr source appTotalInterestsBytesReceived
+vector 112 SimpleNetwork.contentServer1 appTotalContentObjsBytesSent:vector ETV
+attr recordingmode vector
+attr source appTotalContentObjsBytesSent
+vector 113 SimpleNetwork.contentServer1 appTotalDataBytesSent:vector ETV
+attr recordingmode vector
+attr source appTotalDataBytesSent
+vector 114 SimpleNetwork.contentServer1 fwdCacheAdditionsBytes:vector ETV
+attr recordingmode vector
+attr source fwdCacheAdditionsBytes
+vector 115 SimpleNetwork.contentServer1 fwdCacheSizeBytes:vector ETV
+attr recordingmode vector
+attr source fwdCacheSizeBytes
+vector 116 SimpleNetwork.contentServer1 fwdTotalContentObjsBytesSent:vector ETV
+attr recordingmode vector
+attr source fwdTotalContentObjsBytesSent
+vector 117 SimpleNetwork.contentServer1 transportTotalWiredBytesSent:vector ETV
+attr recordingmode vector
+attr source transportTotalWiredBytesSent
+vector 118 SimpleNetwork.wirelessAccessRouter fwdTotalContentObjsBytesReceived:vector ETV
+attr recordingmode vector
+attr source fwdTotalContentObjsBytesReceived
+vector 119 SimpleNetwork.wirelessAccessRouter fwdCacheAdditionsBytes:vector ETV
+attr recordingmode vector
+attr source fwdCacheAdditionsBytes
+vector 120 SimpleNetwork.wirelessAccessRouter fwdCacheSizeBytes:vector ETV
+attr recordingmode vector
+attr source fwdCacheSizeBytes
+vector 121 SimpleNetwork.wirelessAccessRouter fwdTotalContentObjsBytesSent:vector ETV
+attr recordingmode vector
+attr source fwdTotalContentObjsBytesSent
+vector 122 SimpleNetwork.wirelessNode[0] fwdTotalContentObjsBytesReceived:vector ETV
+attr recordingmode vector
+attr source fwdTotalContentObjsBytesReceived
+vector 123 SimpleNetwork.wirelessNode[0] fwdCacheAdditionsBytes:vector ETV
+attr recordingmode vector
+attr source fwdCacheAdditionsBytes
+vector 124 SimpleNetwork.wirelessNode[0] fwdCacheSizeBytes:vector ETV
+attr recordingmode vector
+attr source fwdCacheSizeBytes
+vector 125 SimpleNetwork.wirelessNode[1] fwdTotalContentObjsBytesReceived:vector ETV
+attr recordingmode vector
+attr source fwdTotalContentObjsBytesReceived
+vector 126 SimpleNetwork.wirelessNode[1] fwdCacheAdditionsBytes:vector ETV
+attr recordingmode vector
+attr source fwdCacheAdditionsBytes
+vector 127 SimpleNetwork.wirelessNode[1] fwdCacheSizeBytes:vector ETV
+attr recordingmode vector
+attr source fwdCacheSizeBytes
+vector 128 SimpleNetwork.wirelessNode[1] appSegmentDownloadDuration:vector ETV
+attr recordingmode vector
+attr source appSegmentDownloadDuration
+vector 129 SimpleNetwork.wirelessNode[1] appTotalContentObjsBytesReceived:vector ETV
+attr recordingmode vector
+attr source appTotalContentObjsBytesReceived
+vector 130 SimpleNetwork.wirelessNode[1] appTotalDataBytesReceived:vector ETV
+attr recordingmode vector
+attr source appTotalDataBytesReceived
+vector 131 SimpleNetwork.wirelessNode[1] appContentDownloadDuration:vector ETV
+attr recordingmode vector
+attr source appContentDownloadDuration
+vector 132 SimpleNetwork.wirelessNode[0] appTotalInterestsBytesSent:vector ETV
+attr recordingmode vector
+attr source appTotalInterestsBytesSent
+vector 133 SimpleNetwork.wirelessNode[0] fwdTotalInterestsBytesSent:vector ETV
+attr recordingmode vector
+attr source fwdTotalInterestsBytesSent
+vector 134 SimpleNetwork.wirelessNode[0] transportTotalWirelessBytesSent:vector ETV
+attr recordingmode vector
+attr source transportTotalWirelessBytesSent
+vector 135 SimpleNetwork.wirelessNode[0] appSegmentDownloadDuration:vector ETV
+attr recordingmode vector
+attr source appSegmentDownloadDuration
+vector 136 SimpleNetwork.wirelessNode[0] appTotalContentObjsBytesReceived:vector ETV
+attr recordingmode vector
+attr source appTotalContentObjsBytesReceived
+vector 137 SimpleNetwork.wirelessNode[0] appTotalDataBytesReceived:vector ETV
+attr recordingmode vector
+attr source appTotalDataBytesReceived
+vector 138 SimpleNetwork.wirelessNode[0] appContentDownloadDuration:vector ETV
+attr recordingmode vector
+attr source appContentDownloadDuration
+vector 139 SimpleNetwork.wiredNode2 appRetransmissionInterestsBytesSent:vector ETV
+attr recordingmode vector
+attr source appRetransmissionInterestsBytesSent
+vector 140 SimpleNetwork appNetworkInterestRetransmissionCount:vector ETV
+attr recordingmode vector
+attr source appNetworkInterestRetransmissionCount
+vector 141 SimpleNetwork.wiredNode1 appRetransmissionInterestsBytesSent:vector ETV
+attr recordingmode vector
+attr source appRetransmissionInterestsBytesSent
+vector 142 SimpleNetwork.wirelessNode[0] appRetransmissionInterestsBytesSent:vector ETV
+attr recordingmode vector
+attr source appRetransmissionInterestsBytesSent
+13	25550 1443712 590 650783 108.078172372188 94956.48972907617 32768 0 0.53619384765625 7073.825215945 2725.6033556183
+14	1469262 1432669 590 650783 108.078172372188 94956.48972907617 32768 0.46380615234375 1 25694.174784055 21345.952923729
+0	2901931 30 26 28 0 0 3 1 1 3 3
+1	2901961 20 29 30 0 0 2 1 1 2 2
+2	2901981 10 32 32 0 0 1 1 1 1 1
+3	2901991 10 34 34 0 0 1 1 1 1 1
+4	2902001 10 36 36 0 0 1 1 1 1 1
+5	2902011 10 39 39 0 0 1 1 1 1 1
+6	2902021 40 41 44 0 0 4 1 1 4 4
+7	2902061 20 45 46 0 0 2 1 1 2 2
+8	2902081 20 47 48 0 0 2 1 2 3 5
+9	2902101 20 49 50 0 0 2 1 2 3 5
+10	2902121 49430 589 1113854 108.078172372188 172708.723322389012 1486 16 16 23776 380416
+11	2951551 91031 590 1113855 108.078172372188 172708.723322389012 2918 0 0 0 0
+12	3042582 91031 590 1113855 108.078172372188 172708.723322389012 2918 1 1 2918 2918
+13	3133613 808535 650785 1114229 94956.48972907617 172763.905624391535 16861 0.5362080014648 0.66765399262528 10302.8123618 6319.14094147
+14	3942148 808533 650785 1114229 94956.48972907617 172763.905624391535 16861 0.33234600737472 0.4637919985352 6558.1876382002 2574.5162178703
+15	4750681 49217 590 308563 108.078172372188 39718.792866471224 1534 0 1432 1032983 980473063
+16	4799898 1464 590 10391 108.078172372188 514.550509036115 51 16 16 816 13056
+17	4801362 1464 591 10392 108.078172372188 514.550509036115 51 48 48 2448 117504
+18	4802826 53462 592 308541 108.078556372188 39718.792482471224 1717 48 1048 316416 260419968
+19	4856288 45982 594 308547 108.078556372188 39718.792482471224 1483 16 16 23728 379648
+20	4902270 44499 594 308547 108.078556372188 39718.792482471224 1483 0 0 0 0
+21	4946769 44499 594 308547 108.078556372188 39718.792482471224 1483 1 1 1483 1483
+22	4991268 54637 594 308547 108.078556372188 39718.792482471224 1717 0 1249 848913 664365183
+23	5045905 91964 594 308547 108.078556372188 39718.792482471224 2966 16 16 47456 759296
+24	5137869 99444 595 308551 108.078556372188 39718.792482471224 3200 48 1048 387600 263836800
+25	5237313 46350 597 308556 108.078940372188 39718.792866471224 1483 48 1048 254184 203984832
+26	5283663 94933 599 308565 108.078940372188 39718.800866471224 2966 48 1048 1625368 1632201664
+27	5378596 40437 601 308562 108.078940372188 39718.792866471224 1300 16 16 20800 332800
+28	5419033 90705 601 1113697 108.078940372188 172682.793487103184 2907 0 0 0 0
+29	5509738 90705 601 1113697 108.078940372188 172682.793487103184 2907 1 1 2907 2907
+30	5600443 53305 601 308562 108.078940372188 39718.792866471224 1666 1 1300 925649 754169125
+31	5653748 45982 602 308537 108.078940372188 39718.792098471224 1483 16 16 23728 379648
+32	5699730 44499 602 308537 108.078940372188 39718.792098471224 1483 0 0 0 0
+33	5744229 44499 602 308537 108.078940372188 39718.792098471224 1483 1 1 1483 1483
+34	5788728 89001 602 308567 108.078940372188 39718.800866471224 2966 0 1 1483 1483
+35	5877729 137946 602 308537 108.078940372188 39718.792098471224 4449 16 16 71184 1138944
+36	6015675 186897 603 308568 108.078940372188 39718.800866471224 5932 48 1048 1767736 1639035328
+37	6202572 48481 606 308569 108.079324372188 39718.809250471224 1483 48 1048 1320184 1372320832
+38	6251053 45982 608 308543 108.079324372188 39718.792482471224 1483 48 48 71184 3416832
+39	6297035 53462 610 308545 108.079324372188 39718.792482471224 1717 48 1048 316416 260419968
+40	6350497 46957 612 308533 108.079324372188 39718.791714471224 1513 16 16 24208 387328
+41	6397454 48671 612 308533 108.079324372188 39718.791714471224 1513 0 0.014705882352941 1.7278863545238 0.016526695324469
+42	6446125 48306 612 308533 108.079324372188 39718.791714471224 1513 0.98529411764706 1 1511.2721136455 1509.5607539863
+43	6494431 87362 612 308571 108.079324372188 39718.809250471224 2732 1 235 545222 119772698
+44	6581793 45983 612 308533 108.079324372188 39718.791714471224 1483 16 16 23728 379648
+45	6627776 45983 613 308548 108.079324372188 39718.792482471224 1483 16 16 23728 379648
+46	6673759 44500 613 308548 108.079324372188 39718.792482471224 1483 0 0 0 0
+47	6718259 44500 613 308548 108.079324372188 39718.792482471224 1483 1 1 1483 1483
+48	6762759 87361 613 308554 108.079324372188 39718.792482471224 2732 1 235 545222 119772698
+49	6850120 45983 614 308549 108.079324372188 39718.792482471224 1483 16 16 23728 379648
+50	6896103 44500 614 308549 108.079324372188 39718.792482471224 1483 0 0 0 0
+51	6940603 44500 614 308549 108.079324372188 39718.792482471224 1483 1 1 1483 1483
+52	6985103 54638 614 308549 108.079324372188 39718.792482471224 1717 0 1249 848913 664365183
+53	7039741 45983 614 308549 108.079324372188 39718.792482471224 1483 16 16 23728 379648
+54	7085724 49252 615 308572 108.079324372188 39718.809250471224 1505 48 1048 1343240 1396483520
+55	7134976 53463 616 308553 108.079324372188 39718.792482471224 1717 48 1048 316416 260419968
+56	7188439 45984 619 308560 108.079708372188 39718.792866471224 1483 48 48 71184 3416832
+57	7234423 7011 621 33746 108.079708372188 1795.663125917021 234 16 16 3744 59904
+58	7241434 818954 621 1114030 108.079708372188 172735.692319642405 17485 0 0.95161567057478 14262.218238051 12419.415384656
+59	8060388 827807 621 1114030 108.079708372188 172735.692319642405 17485 0.048384329425222 1 3222.781761949 1379.9789085541
+60	8888195 45655 621 249473 108.079708372188 29655.835005380798 1428 1 235 275532 59813874
+61	8933850 7011 622 33747 108.079708372188 1795.663125917021 234 16 16 3744 59904
+62	8940861 813806 622 1114229 108.079708372188 172763.905624391535 17391 0 0.9472715772526 13954.76940023 12026.984668188
+63	9754667 821746 622 1114229 108.079708372188 172763.905624391535 17391 0.052728422747398 1 3436.2305997704 1508.4458677292
+64	10576413 50916 622 308576 108.079708372188 39718.817634471224 1600 1 235 311724 67666620
+65	10627329 45985 623 308564 108.079708372188 39718.792866471224 1483 16 16 23728 379648
+66	10673314 44502 623 308564 108.079708372188 39718.792866471224 1483 0 0 0 0
+67	10717816 44502 623 308564 108.079708372188 39718.792866471224 1483 1 1 1483 1483
+68	10762318 54640 623 308564 108.079708372188 39718.792866471224 1717 0 1249 848913 664365183
+69	10816958 7012 624 33749 108.079708372188 1795.663125917021 234 16 16 3744 59904
+70	10823970 7480 624 33749 108.079708372188 1795.663125917021 234 1016 1016 237744 241547904
+71	10831450 7480 624 33749 108.079708372188 1795.663125917021 234 1000 1000 234000 234000000
+72	10838930 7480 625 33750 108.079708372188 1795.663125917021 234 1000 1000 234000 234000000
+73	10846410 7840 625 33750 108.079708372188 1795.663125917021 234 1000 234000 27495000 4298385000000
+74	10854250 7480 625 33750 108.079708372188 1795.663125917021 234 1016 1016 237744 241547904
+75	10861730 7480 626 33751 108.079708372188 1795.663125917021 234 1048 1048 245232 257003136
+76	10869210 7480 629 33754 108.088092372188 1795.671509917021 234 1016 1016 237744 241547904
+77	10876690 7480 629 33754 108.088092372188 1795.671509917021 234 1000 1000 234000 234000000
+78	10884170 7840 629 33754 108.088092372188 1795.671509917021 234 1000 234000 27495000 4298385000000
+79	10892010 7480 629 33754 108.088092372188 1795.671509917021 234 1016 1016 237744 241547904
+80	10899490 48951 633 308567 108.096476372188 39718.800866471224 1483 1016 1016 1506728 1530835648
+81	10948441 48951 633 308567 108.096476372188 39718.800866471224 1483 1000 1000 1483000 1483000000
+82	10997392 52293 633 308567 108.096476372188 39718.800866471224 1483 1000 1483000 1100386000 1.088281754e+15
+83	11049685 48951 633 308567 108.096476372188 39718.800866471224 1483 1016 1016 1506728 1530835648
+84	11098636 7480 637 33762 108.104860372188 1795.688277917021 234 1016 1016 237744 241547904
+85	11106116 7480 637 33762 108.104860372188 1795.688277917021 234 1000 1000 234000 234000000
+86	11113596 7840 637 33762 108.104860372188 1795.688277917021 234 1000 234000 27495000 4298385000000
+87	11121436 7480 637 33762 108.104860372188 1795.688277917021 234 1016 1016 237744 241547904
+88	11128916 46086 639 308558 108.113244372188 39718.792866471224 1483 48 1048 122184 59312832
+89	11175002 1567 641 10442 108.113244372188 514.585581036115 51 1016 1016 51816 52645056
+90	11176569 1567 641 10442 108.113244372188 514.585581036115 51 1000 1000 51000 51000000
+91	11178136 1609 641 10442 108.113244372188 514.585581036115 51 1000 51000 1326000 45526000000
+92	11179745 1771 642 10443 108.113244372188 514.585581036115 51 0.035072 0.035072 1.788672 0.062732304384
+93	11181516 1567 642 10443 108.113244372188 514.585581036115 51 1016 1016 51816 52645056
+94	11183083 1567 642 10443 108.113244372188 514.585581036115 51 1000 1000 51000 51000000
+95	11184650 138 960 10443 108.323676372188 514.585581036115 4 0.245504 0.561152 1.788672 0.859801583616
+96	11184788 53175 978 1113696 112.938252091408 172682.793487103184 1607 16 16 25712 411392
+97	11237963 5546 979 33715 112.938252091408 1795.661589917021 183 16 16 2928 46848
+98	11243509 5546 980 33716 112.938252091408 1795.661589917021 183 48 48 8784 421632
+99	11249055 44519 990 308563 112.939020091408 39718.792866471224 1432 16 16 22912 366592
+100	11293574 6096 1031 33766 112.973324091408 1795.696661917021 183 1016 1016 185928 188902848
+101	11299670 6096 1031 33766 112.973324091408 1795.696661917021 183 1000 1000 183000 183000000
+102	11305766 6354 1031 33766 112.973324091408 1795.696661917021 183 1000 183000 16836000 2059604000000
+103	11312120 6828 1032 33767 112.973324091408 1795.696661917021 183 0.035072 0.035072 6.418176 0.225098268672
+104	11318948 6096 1032 33767 112.973324091408 1795.696661917021 183 1016 1016 185928 188902848
+105	11325044 6096 1032 33767 112.973324091408 1795.696661917021 183 1000 1000 183000 183000000
+106	11331140 554 1670 33767 113.394188091408 1795.696661917021 15 0.210432 0.70144 6.418176 3.15506589696
+107	11331694 588387 1753 1114228 133.994756347965 172763.905624391535 17157 16 16 274512 4392192
+108	11920081 21943 1754 308530 133.994756347965 39718.791330471224 683 16 16 10928 174848
+109	11942024 21943 1755 308531 133.994756347965 39718.791330471224 683 48 48 32784 1573632
+110	11963967 40221 1758 308534 133.995140347965 39718.791714471224 1249 48 48 59952 2877696
+111	12004188 40221 1776 308552 133.995908347965 39718.792482471224 1249 16 16 19984 319744
+112	12044409 42719 1776 308552 133.995908347965 39718.792482471224 1249 1016 1016 1268984 1289287744
+113	12087128 42719 1776 308552 133.995908347965 39718.792482471224 1249 1000 1000 1249000 1249000000
+114	12129847 42719 1778 308554 133.995908347965 39718.792482471224 1249 1000 1000 1249000 1249000000
+115	12172566 45359 1778 308554 133.995908347965 39718.792482471224 1249 1000 1249000 780625000 6.50260625e+14
+116	12217925 42719 1778 308554 133.995908347965 39718.792482471224 1249 1016 1016 1268984 1289287744
+117	12260644 42719 1779 308555 133.995908347965 39718.792482471224 1249 1048 1048 1308952 1371781696
+118	12303363 42720 1797 308571 134.012676347965 39718.809250471224 1249 1016 1016 1268984 1289287744
+119	12346083 42720 1797 308571 134.012676347965 39718.809250471224 1249 1000 1000 1249000 1249000000
+120	12388803 45360 1797 308571 134.012676347965 39718.809250471224 1249 1000 1249000 780625000 6.50260625e+14
+121	12434163 43512 1797 308571 134.012676347965 39718.809250471224 1271 1016 1016 1291336 1311997376
+122	12477675 42764 1801 308575 134.021060347965 39718.817634471224 1249 1016 1016 1268984 1289287744
+123	12520439 42764 1801 308575 134.021060347965 39718.817634471224 1249 1000 1000 1249000 1249000000
+124	12563203 45404 1801 308575 134.021060347965 39718.817634471224 1249 1000 1249000 780625000 6.50260625e+14
+125	12608607 43512 1802 308576 134.021060347965 39718.817634471224 1271 1016 1016 1291336 1311997376
+126	12652119 42720 1802 308576 134.021060347965 39718.817634471224 1249 1000 1000 1249000 1249000000
+127	12694839 45360 1802 308576 134.021060347965 39718.817634471224 1249 1000 1249000 780625000 6.50260625e+14
+128	12740199 576012 1803 1114230 134.021060347965 172763.905624391535 17157 0 0.026304 17.965632 0.47256798412799
+129	13316211 622702 1803 1114230 134.021060347965 172763.905624391535 17157 1016 1016 17431512 17710416192
+130	13938913 622702 1803 1114230 134.021060347965 172763.905624391535 17157 1000 1000 17157000 17157000000
+131	14561615 46179 2715 1114230 134.520836347965 172763.905624391535 1376 0 0.52608 17.965632 6.879565836288
+132	14607794 592145 2716 1114029 134.680563176516 172735.692319642405 17251 16 16 276016 4416256
+133	15199939 19314 2717 249428 134.680563176516 29655.808701380798 597 16 16 9552 152832
+134	15219253 19282 2718 249429 134.680563176516 29655.808701380798 596 48 48 28608 1373184
+135	15238535 578615 2764 1114031 134.706867176516 172735.692319642405 17236 0 1886.0681425157 1901.3595345156 3557253.4370546
+136	15817150 626137 2764 1114031 134.706867176516 172735.692319642405 17236 1016 1016 17511776 17791964416
+137	16443287 626137 2764 1114031 134.706867176516 172735.692319642405 17236 1000 1000 17236000 17236000000
+138	17069424 46000 3245 1114031 134.969907176516 172735.692319642405 1370 0 1886.2785745157 1901.3595345157 3558052.0410121
+139	17115424 49370 15279 1113854 748.723322389012 172708.723322389012 1434 16 16 22944 367104
+140	17164794 103508 15279 1113854 748.723322389012 172708.723322389012 2872 1 2872 4125628 7900577620
+141	17268302 49021 37538 1113696 2042.793487103184 172682.793487103184 1423 16 16 22768 364288
+142	17317323 480 83764 93889 6156.815530450422 7836.815530450422 15 16 16 240 3840
+
